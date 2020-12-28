@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS ANIMATION</title>
+	<style type="text/css">
+		section{
+			width: 200px;
+			height: 200px;
+			border-radius: 50px;
+			background-color: indianred;
+			position: relative;
+			animation-name: myball;
+			animation-duration: 2s;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+		}
+		@keyframes myball{
+			from{left:1%;}
+			to{left:90%; background-color: forestgreen}
+
+			1%{left:100px;}
+			10%{left:10%; top:300px; background-color: forestgreen;}
+			20%{left:300px; top:500px; background-color: sandybrown}
+			50%{left:500px; top:50%; background-color: steelblue;}
+			90%{left:700px; top:100%;} 
+
+
+		}
+		@font-face{
+			font-family: brushstrike;
+			src:url("brush-strike/Brushstrike.ttf");
+
+		}
+		h1{
+			font-family: brushstrike;
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS ANIMATION</h1>
+	<section></section>
+
+</body>
+</html>
